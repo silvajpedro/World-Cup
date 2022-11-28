@@ -23,18 +23,26 @@ div{
     top:24vh;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
-    border: solid;
-    width: 100%;
+    justify-content:center;
+    gap:2vw;
+    width: 95%;
     height:80vh
 }
 `
 export const ImageCountry = styled.img`
-height:50vh;
+height:60vh;
 border: solid;
 border-radius: 15px 30px 10px 30px;
 `
 
 export const CountryDescription = styled.p`
 color: #fff;
+font-family:"Roboto", sans-serif;
+font-size:1.8vw;
+line-height:5vh;
+padding:12px;
+width: 42%;
+background-color: black;
+border-radius:10px;
+text-align:justify;
 `

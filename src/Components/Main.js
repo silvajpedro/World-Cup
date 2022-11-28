@@ -10,7 +10,7 @@ import InglaterraC from "./Countrys/inglaterra.js";
 import ArabiaC from "./Countrys/arabia.js";
 import EspanhaC from "./Countrys/espanha.js";
 import SenegalC from "./Countrys/senegal.js";
-import MexicoC from "./Countrys/inglaterra.js";
+import MexicoC from "./Countrys/mexico.js";
 import SuicaC from "./Countrys/suica.js";
 import ServiaC from "./Countrys/servia.js";
 import brasilFlag from "../Assets/brasil.png";
@@ -67,71 +67,71 @@ export default function Main() {
                             setOpen(true);
                             setOpenC(true);
                             setOn(true);
-                        }} alt=""/>
+                        }} alt="bandeira do qatar"/>
                     <img src={equadorFlag} onClick={() => {
                             setOpen(true);
                             setOpenE(true);
                             setOn(true);
-                        }} alt="" />
+                        }} alt="bandeira do equador" />
                     <img src={francaFlag}  onClick={() => {
                             setOpen(true);
                             setOpenF(true);
                             setOn(true);
-                        }} alt="" />
+                        }} alt="bandeira da franca" />
                     <img src={uruguaiFlag} onClick={() => {
                             setOpen(true);
                             setOpenU(true);
                             setOn(true);
-                        }} alt="" />
+                        }} alt="bandeira do uruguai" />
                     <img src={euaFlag} onClick={() => {
                             setOpen(true);
                             setOpenEua(true);
                             setOn(true);
-                        }} alt="" />
+                        }} alt="bandeira do eua" />
                     <img src={inglaterraFlag} onClick={() => {
                             setOpen(true);
                             setOpenI(true);
                             setOn(true);
-                        }} alt="" />
+                        }} alt="bandeira da inglaterra" />
                     <img src={arabiaFlag} onClick={() => {
                             setOpen(true);
                             setOpenA(true);
                             setOn(true);
-                        }} alt="" />
+                        }} alt="bandeira da arabia" />
                     <img src={espanhaFlag} onClick={() => {
                             setOpen(true);
                             setOpenSP(true);
                             setOn(true);
-                        }} alt="" />
+                        }} alt="bandeira da espanha" />
                     <img src={senegalFlag} onClick={() => {
                             setOpen(true);
                             setOpenSE(true);
                             setOn(true);
-                        }} alt="" />
+                        }} alt="bandeira do senegal" />
                     <img
                         src={mexicoFlag} onClick={() => {
                             setOpen(true);
                             setOpenM(true);
                             setOn(true);
-                        }} alt="" />
+                        }} alt="bandeira do mexico" />
                     <img src={suicaFlag} onClick={() => {
                         setOpen(true);
                         setOpenSW(true);
                         setOn(true);
-                    }} alt="" />
+                    }} alt="bandeira da suica" />
                     <img src={serviaFlag} onClick={() => {
                         setOpen(true);
                         setOpenSB(true);
                         setOn(true);
-                    }} alt="" />
+                    }} alt="bandeira da servia" />
                 </S.FlagsBoxMain>
             </S.Main>
             <S.Footer isOn={on}>
                 <S.FlagBoxFooter>
-                    <S.FlagsHeader onClick={() => { setLg("BOLA PRA FRENTE")}} className="brasil" src={brasilFlag} alt="" />
-                    <S.FlagsHeader onClick={() => {setLg("SIGAMOS ENFRENTE")}} className="argentina" src={argentinaFlag} alt="" />
-                    <S.FlagsHeader onClick={() => {setLg("계속하자")}} className="coreia" src={coreiaSFlag} alt="" />
-                    <S.FlagsHeader onClick={() => {setLg("Lass uns weiter gehen")}} className="alemanha" src={alemanhaFlag} alt="" />
+                    <S.FlagsHeader onClick={() => { setLg("BOLA PRA FRENTE")}} className="brasil" src={brasilFlag} alt="bandeira do brasil" />
+                    <S.FlagsHeader onClick={() => {setLg("SIGAMOS ENFRENTE")}} className="argentina" src={argentinaFlag} alt="bandeira da argentina" />
+                    <S.FlagsHeader onClick={() => {setLg("계속하자")}} className="coreia" src={coreiaSFlag} alt="bandeira da coreia" />
+                    <S.FlagsHeader onClick={() => {setLg("Lass uns weiter gehen")}} className="alemanha" src={alemanhaFlag} alt="bandeira da alemanha" />
                 </S.FlagBoxFooter>
             </S.Footer>
             {openC && <QatarC />}
@@ -161,7 +161,7 @@ export default function Main() {
                 setOpenM(false)
                 setOpenSW(false)
                 setOpenSB(false)
-            }} alt="" /> }
+            }} alt="X para fechar" /> }
         </>
     );
 }
