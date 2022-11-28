@@ -54,7 +54,7 @@ export default function Main() {
                 <S.FlagBoxHeader>
                     <S.FlagsHeader onClick={() => {setLg("BOLA PRA FRENTE")}} className="brasil" src={brasilFlag} alt="" />
                     <S.FlagsHeader onClick={() => {setLg("SIGAMOS ENFRENTE")}} className="argentina" src={argentinaFlag} alt="" />
-                    <S.FlagsHeader onClick={() => {setLg("계속하자")}} className="coreia" src={coreiaSFlag}  alt="" />
+                    <S.FlagsHeader onClick={() => {setLg("화이팅")}} className="coreia" src={coreiaSFlag}  alt="" />
                     <S.FlagsHeader onClick={() => { setLg("Lass uns weiter gehen")}} className="alemanha" src={alemanhaFlag} alt="" />
                 </S.FlagBoxHeader>
             </S.Header>
