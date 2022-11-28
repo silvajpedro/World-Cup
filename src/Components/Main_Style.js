@@ -26,7 +26,7 @@ font-size: 2.5vw;
 `
 export const X = styled.img`
 position: absolute;
-top: 63vh;
+top: 98vh;
 right: 3vw;
 z-index: 10;
 cursor: pointer;

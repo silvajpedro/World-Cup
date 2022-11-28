@@ -18,14 +18,15 @@ top: 0;
 z-index: 10;
 opacity: 1;
 background-color:transparent;
-border: solid red;
 div{
+    position:relative;
+    top:24vh;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
     border: solid;
     width: 100%;
-    height:70vh
+    height:80vh
 }
 `
 export const ImageCountry = styled.img`
