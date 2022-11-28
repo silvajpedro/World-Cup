@@ -18,6 +18,7 @@ top: 0;
 z-index: 10;
 opacity: 1;
 background-color:transparent;
+border: solid red;
 div{
     display: flex;
     align-items: center;

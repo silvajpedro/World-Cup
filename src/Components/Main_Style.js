@@ -3,7 +3,6 @@ import Brasil from "../Assets/brasil.cur"
 import Argentina from "../Assets/argentina.cur"
 import Coreia from "../Assets/coreia.cur"
 import Alemanha from "../Assets/alemanha.cur"
-import Stadium from "../Assets/estadio.png"
 export const GlobalStyle = createGlobalStyle`
 *{
     margin: 0;
@@ -12,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 }`
 export const Header = styled.header`
 position: relative;
-z-index: -2;
+z-index: ${(props)=> (props.isOn ? '-2': '0')};
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -24,6 +23,13 @@ justify-content: flex-end;
 font-family: "Roboto", sans-serif;
 width: 23vw;
 font-size: 2.5vw;
+`
+export const X = styled.img`
+position: absolute;
+top: 63vh;
+right: 3vw;
+z-index: 10;
+cursor: pointer;
 `
 export const FlagBoxHeader = styled.div`
 
@@ -52,7 +58,7 @@ width: 5vw;
 `
 export const Main = styled.main`
 position: relative;
-z-index: -2;
+z-index: ${(props)=> (props.isOn ? '-2': '0')};
 height:210vh;
 `
 export const BackgroundStadium = styled.section`
@@ -76,7 +82,7 @@ h2{
 `
 export const FlagsBoxMain = styled.section`
 position: relative;
-z-index: -2;
+z-index: ${(props)=> (props.isOn ? '-2': '0')};
 display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
@@ -91,7 +97,7 @@ img:hover{
 `
 export const Footer = styled.footer`
 position: relative;
-z-index: -2;
+z-index: ${(props)=> (props.isOn ? '-2': '0')};
 display: flex;
 /* border: solid; */
 height: 16vh;
