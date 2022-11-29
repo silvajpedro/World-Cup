@@ -1,34 +1,34 @@
 import React, { useState } from "react";
 import * as S from "./Main_Style.js";
 import X from "../Assets/X.png";
-import QatarC from "./Countrys/catar.js";
-import EquadorC from "./Countrys/equador.js";
-import FrancaC from "./Countrys/franca.js";
-import UruguaiC from "./Countrys/uruguai.js";
-import EUAC from "./Countrys/eua.js";
-import InglaterraC from "./Countrys/inglaterra.js";
-import ArabiaC from "./Countrys/arabia.js";
-import EspanhaC from "./Countrys/espanha.js";
-import SenegalC from "./Countrys/senegal.js";
-import MexicoC from "./Countrys/mexico.js";
-import SuicaC from "./Countrys/suica.js";
-import ServiaC from "./Countrys/servia.js";
-import brasilFlag from "../Assets/brasil.png";
+import QatarComponent from "./Countrys/catar.js";
+import EquadorComponent from "./Countrys/equador.js";
+import FrenchComponent from "./Countrys/franca.js";
+import UruguaiComponent from "./Countrys/uruguai.js";
+import EuaComponent from "./Countrys/eua.js";
+import EnglandComponent from "./Countrys/inglaterra.js";
+import ArabiaComponent from "./Countrys/arabia.js";
+import SpainComponent from "./Countrys/espanha.js";
+import SenegalComponent from "./Countrys/senegal.js";
+import MexicoComponent from "./Countrys/mexico.js";
+import SwitzerlandComponent from "./Countrys/suica.js";
+import SerbiaComponent from "./Countrys/servia.js";
+import brazilFlag from "../Assets/brasil.png";
 import argentinaFlag from "../Assets/argentina.png";
-import coreiaSFlag from "../Assets/coreia.png";
-import alemanhaFlag from "../Assets/alemanha.png";
+import koreaFlag from "../Assets/coreia.png";
+import germanFlag from "../Assets/alemanha.png";
 import qatarFlag from "../Assets/qatar.png";
 import equadorFlag from "../Assets/equador.png";
-import francaFlag from "../Assets/franca.png";
+import frenchFlag from "../Assets/franca.png";
 import uruguaiFlag from "../Assets/uruguai.png";
 import euaFlag from "../Assets/eua.png";
-import inglaterraFlag from "../Assets/inglaterra.png";
+import englandFlag from "../Assets/inglaterra.png";
 import arabiaFlag from "../Assets/arabia.png";
-import espanhaFlag from "../Assets/espanha.png";
+import spainFlag from "../Assets/espanha.png";
 import senegalFlag from "../Assets/senegal.png";
 import mexicoFlag from "../Assets/mexico.png";
-import suicaFlag from "../Assets/dinamarca.png";
-import serviaFlag from "../Assets/servia.png";
+import switzerlandFlag from "../Assets/dinamarca.png";
+import serbiaFlag from "../Assets/servia.png";
 import "../App.css";
 
 export default function Main() {
@@ -52,10 +52,10 @@ export default function Main() {
             <S.Header isOn={on}>
                 <S.FirsTitle>COPA DO MUNDO</S.FirsTitle>
                 <S.FlagBoxHeader>
-                    <S.FlagsHeader onClick={() => {setLg("BOLA PRA FRENTE")}} className="brasil" src={brasilFlag} alt="" />
-                    <S.FlagsHeader onClick={() => {setLg("SIGAMOS ENFRENTE")}} className="argentina" src={argentinaFlag} alt="" />
-                    <S.FlagsHeader onClick={() => {setLg("화이팅")}} className="coreia" src={coreiaSFlag}  alt="" />
-                    <S.FlagsHeader onClick={() => { setLg("Lass uns weiter gehen")}} className="alemanha" src={alemanhaFlag} alt="" />
+                    <S.FlagsHeader onClick={() => {setLg("BOLA PRA FRENTE")}} className="brasil" src={brazilFlag} alt="bandeira do Brasil" />
+                    <S.FlagsHeader onClick={() => {setLg("SIGAMOS ENFRENTE")}} className="argentina" src={argentinaFlag} alt="bandeira da Argentina" />
+                    <S.FlagsHeader onClick={() => {setLg("화이팅")}} className="coreia" src={koreaFlag}  alt="bandeira da coreia" />
+                    <S.FlagsHeader onClick={() => { setLg("Lass uns weiter gehen")}} className="alemanha" src={germanFlag} alt="bandeira da Alemanha" />
                 </S.FlagBoxHeader>
             </S.Header>
             <S.Main isOn={on}>
@@ -73,7 +73,7 @@ export default function Main() {
                             setOpenE(true);
                             setOn(true);
                         }} alt="bandeira do equador" />
-                    <img src={francaFlag}  onClick={() => {
+                    <img src={frenchFlag}  onClick={() => {
                             setOpen(true);
                             setOpenF(true);
                             setOn(true);
@@ -88,7 +88,7 @@ export default function Main() {
                             setOpenEua(true);
                             setOn(true);
                         }} alt="bandeira do eua" />
-                    <img src={inglaterraFlag} onClick={() => {
+                    <img src={englandFlag} onClick={() => {
                             setOpen(true);
                             setOpenI(true);
                             setOn(true);
@@ -98,7 +98,7 @@ export default function Main() {
                             setOpenA(true);
                             setOn(true);
                         }} alt="bandeira da arabia" />
-                    <img src={espanhaFlag} onClick={() => {
+                    <img src={spainFlag} onClick={() => {
                             setOpen(true);
                             setOpenSP(true);
                             setOn(true);
@@ -114,12 +114,12 @@ export default function Main() {
                             setOpenM(true);
                             setOn(true);
                         }} alt="bandeira do mexico" />
-                    <img src={suicaFlag} onClick={() => {
+                    <img src={switzerlandFlag} onClick={() => {
                         setOpen(true);
                         setOpenSW(true);
                         setOn(true);
                     }} alt="bandeira da suica" />
-                    <img src={serviaFlag} onClick={() => {
+                    <img src={serbiaFlag} onClick={() => {
                         setOpen(true);
                         setOpenSB(true);
                         setOn(true);
@@ -128,24 +128,24 @@ export default function Main() {
             </S.Main>
             <S.Footer isOn={on}>
                 <S.FlagBoxFooter>
-                    <S.FlagsHeader onClick={() => { setLg("BOLA PRA FRENTE")}} className="brasil" src={brasilFlag} alt="bandeira do brasil" />
+                    <S.FlagsHeader onClick={() => { setLg("BOLA PRA FRENTE")}} className="brasil" src={brazilFlag} alt="bandeira do brasil" />
                     <S.FlagsHeader onClick={() => {setLg("SIGAMOS ENFRENTE")}} className="argentina" src={argentinaFlag} alt="bandeira da argentina" />
-                    <S.FlagsHeader onClick={() => {setLg("계속하자")}} className="coreia" src={coreiaSFlag} alt="bandeira da coreia" />
-                    <S.FlagsHeader onClick={() => {setLg("Lass uns weiter gehen")}} className="alemanha" src={alemanhaFlag} alt="bandeira da alemanha" />
+                    <S.FlagsHeader onClick={() => {setLg("계속하자")}} className="coreia" src={koreaFlag} alt="bandeira da coreia" />
+                    <S.FlagsHeader onClick={() => {setLg("Lass uns weiter gehen")}} className="alemanha" src={germanFlag} alt="bandeira da alemanha" />
                 </S.FlagBoxFooter>
             </S.Footer>
-            {openC && <QatarC />}
-            {openE && <EquadorC />}
-            {openF && <FrancaC />}
-            {openU && <UruguaiC />}
-            {openEUA && <EUAC />}
-            {openI && <InglaterraC />}
-            {openA && <ArabiaC />}
-            {openSP && <EspanhaC />}
-            {openSE && <SenegalC />}
-            {openM && <MexicoC />}
-            {openSW && <SuicaC />}
-            {openSB && <ServiaC />}
+            {openC && <QatarComponent/>}
+            {openE && <EquadorComponent />}
+            {openF && <FrenchComponent />}
+            {openU && <UruguaiComponent />}
+            {openEUA && <EuaComponent />}
+            {openI && <EnglandComponent />}
+            {openA && <ArabiaComponent />}
+            {openSP && <SpainComponent />}
+            {openSE && <SenegalComponent />}
+            {openM && <MexicoComponent />}
+            {openSW && <SwitzerlandComponent />}
+            {openSB && <SerbiaComponent />}
             {open && <S.X src={X} onClick={() => {
                 setOn(false);
                 setOpen(false);

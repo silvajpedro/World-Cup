@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "./style.js"
+import * as S from "./Country_style.js"
 export default function Country({Description, Image}) {
   return (
     <>
