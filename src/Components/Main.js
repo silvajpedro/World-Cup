@@ -61,7 +61,7 @@ export default function Main() {
                             setOpen(true);
                             setOpenE(true);
                             setOn(true);
-                        }} alt="bandeira da argentina" />
+                        }} alt="bandeira da equador" />
                     <img src={frenchFlag}  onClick={() => {
                             setOpen(true);
                             setOpenF(true);
@@ -71,7 +71,7 @@ export default function Main() {
                             setOpen(true);
                             setOpenU(true);
                             setOn(true);
-                        }} alt="bandeira do uruguai" />
+                        }} alt="bandeira do argentina" />
                     <img src={euaFlag} onClick={() => {
                             setOpen(true);
                             setOpenEua(true);
